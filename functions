@@ -1,0 +1,14 @@
+//example 1
+function setName (ffName, llName, age){
+    console.log(`My name is ${ffName} ${llName} and I'm ${age} years old`)
+}
+setName("Odin","Thor",20)
+setName("John", "Doe", 30)
+
+//example 2
+function addsTwoNumbers(num1, num2){
+    const sum = num1 + num2
+    return sum 
+}
+let result = addsTwoNumbers(3,7)
+console.log(result);
