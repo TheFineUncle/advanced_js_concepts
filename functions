@@ -12,3 +12,21 @@ function addsTwoNumbers(num1, num2){
 }
 let result = addsTwoNumbers(3,7)
 console.log(result);
+
+//functions with param
+function performMathOperation(num1, num2, operationType){
+    if(operationType == "add"){
+        const result = num1 + num2
+        return result
+    }else if (operationType == "sub"){
+        const result = num1 - num2
+        return result
+    }else{
+        alert("operationType not supported!")
+    }
+}
+const sumResult = performMathOperation(82, 55, "add")
+const SubResult = performMathOperation(56, 23, "sub")
+console.log(sumResult)
+console.log(SubResult)
+
