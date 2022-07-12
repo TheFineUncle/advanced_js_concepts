@@ -1,0 +1,34 @@
+//The Destructuring assignment
+let a, b;
+[a, b] = [34, 35];
+console.log(a);
+
+//Rest pattern
+[a, b, ...rest] = [50, 60, 70, 80, 90];
+console.log(rest);
+
+({a, b} = {a:10, b:20, c:30, d:50, e:60});
+({a, b, ...rest} = {a:10, b:20, c:30, d:50, e:60});
+console.log(rest);
+
+//Array Destructuring
+const people = ['Dave', 'Chapelle', 'Wick'];
+const [person1, person2, person3] = people;
+console.log(person1, person2, person3);
+
+
+//Object Destructuring
+ const person = {
+    name: 'John Musk',
+    gender: 'Male',
+    age: 34,
+    location: 'Napal',
+    sayHello: function(){
+        console.log('Hello');
+    }
+ }
+ const { name, gender, age, sayHello} = person;
+ console.log(name, gender, age);
+ sayHello();
+
+ 
